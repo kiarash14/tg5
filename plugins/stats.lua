@@ -145,7 +145,7 @@ local function run(msg, matches)
       end
     end
 
-    if matches[2] == "bot" or "telemanager" then
+    if matches[2] == "bot" or "telebumper" then
       if not is_sudo(msg) then
         return "تنها برای سودو مجاز است"
       else
@@ -174,7 +174,7 @@ return {
     "^[!/]([Ss]tats)$",
     "^[!/]([Ss]tats) (chat) (%d+)",
     "^[!/]([Ss]tats) (bot)",
-    "^[!/]([Ss]tats) (telemanager)"
+    "^[!/]([Ss]tats) (telebumper)"
     }, 
   run = run,
   pre_process = pre_process
