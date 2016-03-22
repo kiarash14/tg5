@@ -1,25 +1,18 @@
 do
 
 local function run(msg, matches)
-  if matches[1]:lower() == 'telemanager' or 'telemanagerplus' then --change this with anything you want
+  if matches[1]:lower() == 'telebumper' or 'telebumperplus' then --change this with anything you want
     send_document(get_receiver(msg), "./data/me/telemanager.webp", ok_cb, false) --put here sticker location(if you want)
       return [[ 
   
-TeleManagerPlus V 3.0.0
-    Advanced ManagerBot Based On TeleSeed
-    
-    Translated And Edited By : @ali_ghoghnoos
+TeleBumperPlus V 6
     
     Our Telegram Channel ID :
-    @Telemanager_ch
+    @TeleBumperch
     
     Sudo ID : 
-    @ali_ghoghnoos
+    @Kiarash_14
     
-    Speacial Thanks To My friends :
-    @ThisIsArman
-    @minaco
-    @dragon_born
     and other that help me for this Bot
     
 
@@ -30,11 +23,11 @@ end
 
 return {
   patterns = {
-    "^[!/]([Tt]elemanager)$",
-    "^([Tt]elemanager)$",
-    "^[!/]([Tt]elemanagerplus)$",
-    "^([Tt]elemanagerplus)$",
-    "^(@telemanagerplus)$",
+    "^[!/]([Tt]elebumper)$",
+    "^([Tt]elebumper)$",
+    "^[!/]([Tt]elebumperplus)$",
+    "^([Tt]elebumperplus)$",
+    "^(@telebumperplus)$",
     
     },
   run = run
