@@ -167,7 +167,7 @@ member
  
  !share
  
- !telemanagerplus
+ !telebumper
  
  !sticker [TXT]
  ==========================
