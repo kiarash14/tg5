@@ -248,8 +248,8 @@ local lock_video = "no"
         end
         
          local settings = data[tostring(target)]['settings']
-	local textrealm = "⚙Group settings⚙\n====================\nLock group name : "..settings.lock_name.."\n➖➖➖➖\nLock group photo : "..settings.lock_photo.."\n➖➖➖➖\nLock group tag : "..lock_tag.."\n➖➖➖➖\nLock group persian(Disable) : "..lock_arabic.."\n➖➖➖➖\nLock group chating : "..lock_chat.."\n➖➖➖➖\nLock group member : "..settings.lock_member.."\n➖➖➖➖\nLock group english  "..lock_eng.."\n➖➖➖➖\n Lock group leave : "..lock_leave.."\n➖➖➖➖\nLock group bad words : "..lock_badw.."\n➖➖➖➖\nLock group ads : "..lock_link.."\n➖➖➖➖\nsticker status : "..lock_sticker.."\n➖➖➖➖\nflood sensitivity : "..NUM_MSG_MAX.."\n➖➖➖➖\nBot protection : "..bots_protection.. "\n➖➖➖➖\n Group Type : Realm\n➖➖➖➖\n BotVersion : 3.0.0 (open soruce)"..tmp
-  local text = "⚙Group settings⚙\n====================\nLock group name : "..settings.lock_name.."\n➖➖➖➖\nLock group photo : "..settings.lock_photo.."\n➖➖➖➖\nLock group tag : "..lock_tag.."\n➖➖➖➖\nLock group persian(Disable) : "..lock_arabic.."\n➖➖➖➖\nLock group chating : "..lock_chat.."\n➖➖➖➖\nLock group member : "..settings.lock_member.."\n➖➖➖➖\nLock group english  "..lock_eng.."\n➖➖➖➖\n Lock group leave : "..lock_leave.."\n➖➖➖➖\nLock group bad words : "..lock_badw.."\n➖➖➖➖\nLock group ads : "..lock_link.."\n➖➖➖➖\nsticker status : "..lock_sticker.."\n➖➖➖➖\nflood sensitivity : "..NUM_MSG_MAX.."\n➖➖➖➖\nBot protection : "..bots_protection.. "\n➖➖➖➖\n Group Type : Normal\n➖➖➖➖\n BotVersion : 3.0.0 (open source)"..tmp
+	local textrealm = "⚙Group settings⚙\n====================\nLock group name : "..settings.lock_name.."\n➖➖➖➖\nLock group photo : "..settings.lock_photo.."\n➖➖➖➖\nLock group tag : "..lock_tag.."\n➖➖➖➖\nLock group persian(Disable) : "..lock_arabic.."\n➖➖➖➖\nLock group chating : "..lock_chat.."\n➖➖➖➖\nLock group member : "..settings.lock_member.."\n➖➖➖➖\nLock group english  "..lock_eng.."\n➖➖➖➖\n Lock group leave : "..lock_leave.."\n➖➖➖➖\nLock group bad words : "..lock_badw.."\n➖➖➖➖\nLock group ads : "..lock_link.."\n➖➖➖➖\nsticker status : "..lock_sticker.."\n➖➖➖➖\nflood sensitivity : "..NUM_MSG_MAX.."\n➖➖➖➖\nBot protection : "..bots_protection.. "\n➖➖➖➖\n Group Type : Realm\n➖➖➖➖\n BotVersion : 6"..tmp
+  local text = "⚙Group settings⚙\n====================\nLock group name : "..settings.lock_name.."\n➖➖➖➖\nLock group photo : "..settings.lock_photo.."\n➖➖➖➖\nLock group tag : "..lock_tag.."\n➖➖➖➖\nLock group persian(Disable) : "..lock_arabic.."\n➖➖➖➖\nLock group chating : "..lock_chat.."\n➖➖➖➖\nLock group member : "..settings.lock_member.."\n➖➖➖➖\nLock group english  "..lock_eng.."\n➖➖➖➖\n Lock group leave : "..lock_leave.."\n➖➖➖➖\nLock group bad words : "..lock_badw.."\n➖➖➖➖\nLock group ads : "..lock_link.."\n➖➖➖➖\nsticker status : "..lock_sticker.."\n➖➖➖➖\nflood sensitivity : "..NUM_MSG_MAX.."\n➖➖➖➖\nBot protection : "..bots_protection.. "\n➖➖➖➖\n Group Type : Normal\n➖➖➖➖\n BotVersion : 6"..tmp
   if is_realm(msg) then
   return textrealm
   else
@@ -1529,11 +1529,11 @@ local function run(msg, matches)
           msgr = get_message(msg.reply_id, setowner_by_reply, false)
       end
     end
-    if matches[1] == 'tele' and  matches[2] == 'manager' then
-    	        return "TeleManagerPlus V3\n Advanced Bot Base On TeleSeed\nchannel id : @telemanager_ch \n#Open_Source\n\n[@telemanagerplus](Https://github.com/telemanagerplus)"
+    if matches[1] == 'tele' and  matches[2] == 'bumper' then
+    	        return "TeleBumperPlus V6\nchannel id : @telebumperch \n\n"
             end
     if matches[1] == 'telemanager' then
-    	return "TeleManagerPlus V3\n Advanced Bot Base On TeleSeed\nchannel id : @telemanager_ch \n#Open_Source\n\n[@telemanagerplus](Https://github.com/telemanagerplus)"
+    	return "TeleBumperPlus V6\n\nchannel id : @telebumper\n"
     end
     if matches[1] == 'owner' then
       local group_owner = data[tostring(msg.to.id)]['set_owner']
