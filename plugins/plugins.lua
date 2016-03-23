@@ -22,7 +22,7 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = '\n\n@telemanager_ch'
+  local tmp = '\n\n@telebumperch'
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
@@ -43,7 +43,7 @@ local function list_all_plugins(only_enabled)
       text = text..nsum..'.'..status..' '..v..' \n'
     end
   end
-  local text = text..'\n\n'..nsum..' plugins installed\n\n'..nact..' plugins enabled\n\n'..nsum-nact..' plugins disabled'..tmp
+  local text = text..'\n\n'..nsum..' plugins installed\n\n'..nact..' plugins enabled\n\n'..nsum-nact..' plugins disabled'
   return text
 end
 
@@ -68,7 +68,7 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\nPlugins Reloaded !\n\n'..nact..' plugins enabled\n'..nsum..' plugins installed\n\n@telemanager_ch'
+  local text = text..'\nPlugins Reloaded !\n\n'..nact..' plugins enabled\n'..nsum..' plugins installed\n\n@telebumperch'
   return text
 end
 
