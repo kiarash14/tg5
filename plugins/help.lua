@@ -4,7 +4,7 @@ function run(msg, matches)
 
 local mods = [[ 
 راهنما فارسی مدیران :
-@telebumperch
+@Scenech
 
 !kick [Username | ID | Reply]
 
@@ -65,7 +65,7 @@ member
  local admin = [[ 
  
  راهنمای فارسی ادمین ها :
- @telebumperch
+ @Scenech
  
  !banall [Reply | ID | Username]
  
@@ -108,7 +108,7 @@ member
  local owner = [[
  
  راهنمای فارسی صاحبان گروه :
- @telebumperch
+ @Scenech
  
  !promote [Reply | ID | Username]
  
@@ -141,7 +141,7 @@ member
  local member = [[
  
  راهنمای فارسی عضو ها :
- @telebumperch
+ @Scenech
  
  !calc [formula]
  
@@ -167,7 +167,7 @@ member
  
  !share
  
- !telebumper
+ !telescene
  
  !sticker [TXT]
  ==========================
@@ -187,7 +187,7 @@ member
  local sudo = [[
  
  راهنما فارسی سودو ها :
- @telebumperch
+ @Scenech
  
  !addadmin [ID | Username]
  
