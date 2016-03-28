@@ -11,7 +11,7 @@ local function create_group(msg)
             elseif is_admin(msg) then   
                 send_document(get_receiver(msg), "./data/me/creategroup.webp", ok_cb, false) --Send sticker when admin want to creategroup!
 
-        else return "For create group,send pm to @kia_ry_bot\nOr join support (with link) from our channel\n@telebumperch"
+        else return "For create group,send pm to @kia_ry_bot\nOr join support (with link) from our channel\n@scenech"
         end
 end
 
